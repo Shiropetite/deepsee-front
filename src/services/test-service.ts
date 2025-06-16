@@ -1,6 +1,5 @@
-import axios from 'axios'
-import { onMounted } from 'vue'
+import api from '../config/axios'
 
 export async function getTest() {
-  return (await axios.get('http://localhost:3000/test')).data
+  return (await api.get('/test')).data
 }
